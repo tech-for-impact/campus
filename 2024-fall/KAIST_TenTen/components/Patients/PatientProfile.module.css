@@ -1,0 +1,129 @@
+.profileContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.imageContainer {
+  flex-shrink: 0;
+}
+
+.loadingTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.profileName {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.profilePhone {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profileDetailsRow {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.profileDetail {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #555;
+  gap: 8px;
+}
+
+.icon {
+  color: #888;
+}
+
+/* 버튼 컨테이너 */
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+/* 버튼 스타일 */
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+  background-color: #f9f9f9;
+  border: solid #555;
+  border-radius: 32px;
+  border-width: 2px 2px;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);*/
+}
+
+.actionButton:hover {
+  opacity: 0.7;
+}
+
+.buttonIcon {
+  font-size: 1.2rem;
+}
+
+.modalBody {
+  background-color: gray;
+}
+/* 부모 컨테이너 스타일 */
+.carouselContainer {
+  width: 100%; /* 전체 너비 */
+  height: 500px; /* 고정 높이 */
+  overflow: hidden; /* 넘치는 내용 숨김 */
+  position: relative; /* 자식 요소 위치 기준 */
+}
+
+/* 이미지 스타일 */
+.carouselImage {
+  object-fit: contain; /* 이미지 비율 유지하며 컨테이너에 맞춤 */
+  width: 100%; /* 부모 너비에 맞춤 */
+  height: 100%; /* 부모 높이에 맞춤 */
+}
+
+.hwpImage {
+  object-fit: contain;
+  width: 960px;
+  height: 1041px;
+}

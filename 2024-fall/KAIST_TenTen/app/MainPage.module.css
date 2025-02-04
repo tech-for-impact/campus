@@ -1,0 +1,14 @@
+/* MainPage.module.css - 메인 페이지 스타일 */
+
+.mainPage {
+  margin-top: var(--header-height);
+  padding: 0 var(--padding-page);
+  font-family: var(--font-family);
+}
+/*
+.title {
+  font-size: var(--font-size-title);
+  color: #000;
+  margin: 90px 0 15px 0;
+  text-align: left;
+}*/

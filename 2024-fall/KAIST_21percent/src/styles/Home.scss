@@ -1,0 +1,27 @@
+/* src/pages/Home.scss */
+
+.home-page {
+  .clothing-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .party-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+
+  .register-button {
+    width: 120px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}

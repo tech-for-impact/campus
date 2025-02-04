@@ -1,0 +1,227 @@
+.summaryContainer {
+  background-color: #fff;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 16px 12px 16px 16px;
+  width: 620px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.summaryTab {
+  border: 0px;
+}
+
+.summaryTab:focus {
+  outline: 0px;
+  box-shadow: none;
+}
+
+.summaryTab:hover {
+  border-color: #d1d5db; /* hover:border-gray-300 */
+  color: #374151; /* hover:text-gray-600 */
+}
+
+.listItem {
+  border-bottom: 1px solid #e5e7eb; /* Equivalent to border-gray-200 */
+  padding-bottom: 0.5rem; /* Tailwind's pb-2 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+  display: flex;
+  flex-direction: column; /* Makes the children stack vertically */
+  gap: 0.4rem; /* Adds spacing between title and content */
+}
+
+.questionList {
+  border-bottom: 1px solid #e5e7eb; /* Equivalent to border-gray-200 */
+  padding-bottom: 0.5rem; /* Tailwind's pb-2 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+  display: flex;
+  flex-direction: column; /* Makes the children stack vertically */
+}
+
+.accordion {
+  background-color: white;
+  border-width: 1px;
+  border: 1px solid #bbbbbb;
+}
+
+.innerAccordion {
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-radius: 0;
+}
+
+.innerAccordion:first-child {
+  border-top: 0px;
+}
+
+.innerAccordion:last-child {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* Accordion Title */
+.accordionTitle,
+.outerAccordionTitle,
+.innerAccordionTitle {
+  padding: 1.25rem; /* Tailwind's p-5 */
+  padding-bottom: 0.75rem;
+  text-align: left;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.innerAccordionPanel {
+  border-radius: 0px;
+}
+
+.innerAccordionTitle {
+  gap: 8px;
+  font-weight: 600;
+  color: rgb(65, 65, 65);
+  border-top: 1px solid rbga(0, 0, 0, 0.1);
+}
+
+.accordionTitle:focus,
+.outerAccordionTitle:focus,
+.innerAccordionTitle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.accordionTitle:hover,
+.outerAccordionTitle:hover,
+.innerAccordionTitle:hover {
+  background-color: #f7f7f7;
+}
+
+/* Accordion Content */
+.accordionContent,
+.outerAccordionContent {
+  background-color: white;
+  color: #374151; /* Tailwind's text-gray-800 */
+  padding-bottom: 16px;
+}
+.outerAccordionContent {
+  background-color: white;
+  border-width: 0px;
+  border: 0px solid #bbbbbb;
+  padding: 0 0 0 8px;
+}
+
+.listItem:last-child {
+  border-bottom: 0px solid white;
+  margin-bottom: 0px;
+}
+
+/* Bold Title */
+.boldTitle,
+.boldLabel {
+  font-weight: bold;
+  display: block;
+}
+
+.boldLabel {
+  margin-top: 4px;
+}
+
+.title {
+  font-size: var(--font-size-large);
+  margin-bottom: var(--padding-small);
+}
+
+.section {
+  margin-bottom: var(--padding-medium);
+}
+
+.section h4 {
+  font-size: var(--font-size-medium);
+  margin-bottom: var(--padding-small);
+}
+
+.section p {
+  font-size: var(--font-size-medium);
+  margin: 0;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  font-weight: normal;
+}
+
+/*타임라인 박스*/
+
+.answerPoint {
+  margin-top: 8px;
+}
+
+.quoteContainer {
+  margin-top: 12px;
+}
+
+.quoteBox {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 6px 0 6px 12px;
+  border-radius: 8px;
+  padding: 8px;
+  color: #57595c;
+}
+
+.timestamp {
+  display: block; /* 블록 레벨로 설정하여 라인 끝으로 이동 */
+  text-align: right; /* 오른쪽 정렬 */
+}
+
+/* scrollableContent class for enabling scroll */
+.scrollableContent {
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+  padding-right: 0.3rem;
+  border-radius: 8px;
+  padding-bottom: 8px;
+  padding-top: 4px;
+}
+/* Optional: Styling the scrollbar for modern browsers */
+.scrollableContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollableContent::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 4px;
+}
+
+.scrollableContent::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.addButton {
+  display: inline-block;
+  background-color: none;
+  color: rgb(14 116 144);
+  border: 1px solid rgb(14 116 144);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  color: rgb(31, 187, 211);
+  border: 1px solid rgb(31, 187, 211);
+}

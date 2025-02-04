@@ -1,0 +1,95 @@
+/* src/components/MainContent/PersonalInfoSection.module.css */
+.section {
+  margin-bottom: var(--padding-medium);
+}
+
+.subSection {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.subField {
+  margin-bottom: 0px;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 16px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--padding-small);
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+}
+
+.infoSection {
+  margin-bottom: var(--padding-medium);
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-small);
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--padding-small);
+}
+
+.label {
+  margin-bottom: 8px;
+}
+
+.label,
+.subFieldLabel {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.inputField {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.25rem;
+}
+
+.radioContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.radioInput {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #d1d5db;
+  color: #4f46e5;
+}
+
+.radioInput:focus {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); /* focus:ring-indigo-600: Focus ring 효과 */
+}
+
+.textField {
+  padding: var(--padding-small);
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+}
+
+.grayText {
+  color: gray;
+}

@@ -1,0 +1,9 @@
+/* SortOptions.module.css - 정렬 옵션 스타일 */
+
+.sortOptions {
+  padding: var(--padding-small);
+  font-size: var(--font-size-medium);
+  width: 100px;
+  user-select: none;
+  text-align: center;
+}

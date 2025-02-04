@@ -1,0 +1,51 @@
+.Page {
+  margin-top: var(--header-height);
+  padding: 0 var(--padding-page);
+  font-family: var(--font-family);
+}
+
+.sessionContainer {
+  margin-bottom: 64px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: visible;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  line-height: 1.5;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-left: 8px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.tableHeaderItem {
+  flex: 1;
+  text-align: left;
+  margin: 0;
+}
+
+.actionButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  color: black;
+}
+
+.actionButton:hover {
+  color: #ff0000;
+}

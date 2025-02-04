@@ -1,0 +1,63 @@
+.navigationList {
+  list-style: none;
+  padding: 0;
+}
+
+.navItem {
+  padding: var(--padding-small);
+  cursor: pointer;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  color: inherit;
+  text-align: left;
+  padding: 0;
+}
+
+.penIcon {
+  margin-left: 8px;
+}
+
+.recordIcon {
+  margin-left: 5px;
+  color: red; /* 녹음 중임을 강조하기 위해 빨간색 */
+}
+
+.tabHeader {
+  display: flex;
+  align-items: center; /* 제목과 버튼을 같은 줄에 정렬 */
+  justify-content: space-between;
+  margin-bottom: var(--padding-small);
+}
+
+.tabTitle {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  margin: 0; /* 제목의 여백 제거 */
+}
+
+.tabButtons {
+  display: flex;
+  gap: var(--padding-small); /* 버튼 간의 간격 */
+}
+
+.activeButton {
+  color: black; /* 활성화된 버튼은 검정색 */
+  font-weight: bold; /* 진하게 */
+  font-size: 1.1rem; /* 폰트 크기를 키움 */
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.inactiveButton {
+  color: gray; /* 비활성화된 버튼은 회색 */
+  font-weight: bold; /* 진하게 */
+  font-size: 1.1rem; /* 폰트 크기를 키움 */
+  border: none;
+  background: none;
+  cursor: pointer; /* 여전히 클릭 가능하게 */
+  opacity: 0.7; /* 살짝 연하게 */
+}

@@ -1,0 +1,175 @@
+/* 환자 리스트 전체 컨테이너 */
+.Page {
+  padding: 20px;
+}
+
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+  gap: 16px;
+  height: var(--header-height);
+}
+
+.listHeadertext {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: inter;
+}
+
+/* 날짜별 그룹화 컨테이너 */
+.groupContainer {
+  margin-bottom: 64px;
+  padding: 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 날짜 그룹 헤더 */
+.groupHeader {
+  flex-direction: row;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.groupHeaderTime {
+  /* flex-direction: column; */
+  gap: 0px;
+}
+
+.groupHeaderDay {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+}
+
+.groupHeaderDate {
+  font-size: 49px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+}
+
+.groupHeaderOrganization {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 16px;
+  padding-bottom: 8px;
+  line-height: 1;
+}
+
+
+.dateText {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 테이블 헤더 */
+.tableHeader {
+  display: flex;
+  align-items: center;
+  /* 수직 중앙 정렬 */
+  height: 50px;
+  /* 고정된 높이 */
+  line-height: 1.5;
+  /* 텍스트가 중앙에 위치 */
+  justify-content: space-between;
+  /* 헤더 아이템 간 간격 균등 분배 */
+  /*background-color: #f5f5f5;*/
+  padding: 0 30px;
+  margin-left: 8px;
+  /* 좌우 여백 */
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+}
+
+.tableHeaderItem {
+  flex: 1;
+  /* 각 헤더 아이템이 동일한 비율로 공간 차지 */
+  text-align: left;
+  /* 텍스트 중앙 정렬 */
+  margin: 0;
+  /* 여백 초기화 */
+}
+
+.actionButton {
+  width: 150px;
+  height: 57px;
+  font-size: 64px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--border-large);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background-color: #000000;
+  color: #ffffff;
+  padding-bottom: 16px;
+
+}
+
+.actionButton:hover {
+  opacity: 0.8;
+}
+
+.fakeButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: none;
+}
+
+
+.filteredResults {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.resultItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.resultItem:last-child {
+  border-bottom: none;
+}
+
+.resultName,
+.resultDOB,
+.resultGender {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.resultName {
+  font-weight: bold;
+}
+
+.resultDOB {
+  color: #666;
+}
+
+.resultGender {
+  color: #444;
+}

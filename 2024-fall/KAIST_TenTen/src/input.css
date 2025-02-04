@@ -1,0 +1,33 @@
+/* global.css - 전역 스타일 변수 설정 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #e5e5ea;
+  --accent-color: #0511f2;
+  --font-family: "Inter", sans-serif;
+  --font-size-title: 48px;
+  --font-size-extra-large: 32px;
+  --font-size-large: 24px;
+  --font-size-medium: 16px;
+  --font-size-small: 12px;
+  --font-weight-bold: 600;
+  --font-weight-normal: 400;
+  --padding-small: 8px;
+  --padding-medium: 20px;
+  --padding-page: 36px;
+  --border-medium: 20px;
+  --border-large: 30px;
+  --header-height: 60px;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

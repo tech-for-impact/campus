@@ -1,0 +1,25 @@
+// src/styles.module.scss
+// 이 파일은 모듈화 된 스타일을 적용하는 파일
+// 모듈 변수
+$button-bg: #e74c3c;
+$button-text: white;
+
+// 모듈 스타일
+.button {
+  background-color: $button-bg;
+  color: $button-text;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: lighten($button-bg, 10%);
+  }
+
+  &:active {
+    background-color: darken($button-bg, 10%);
+  }
+}
